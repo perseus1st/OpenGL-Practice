@@ -1803,7 +1803,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/bin/pkg-config][v3.0.6()]"
+			"value" : "[/usr/bin/pkg-config][v3.0.7()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",

@@ -30,7 +30,7 @@ target_include_directories(glad PUBLIC
 
 # Your program
 add_executable(Alexandria-2
-    main.cpp
+    src/main.cpp
 )
 
 target_link_libraries(Alexandria-2
