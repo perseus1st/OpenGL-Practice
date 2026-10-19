@@ -70,12 +70,13 @@ CMakeUserPresets.json
 .nfs*
 
 ### VisualStudioCode ###
+.vscode
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# !.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
@@ -500,5 +501,9 @@ FodyWeavers.xsd
 
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
+
+### Ninja ###
+.ninja_deps
+.ninja_log
 
 # End of https://www.toptal.com/developers/gitignore/api/cmake,c++,linux,windows,visualstudio,visualstudiocode

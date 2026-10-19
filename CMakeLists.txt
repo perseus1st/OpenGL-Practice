@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(Alexandria-2 LANGUAGES C CXX)
+project(OpenGL-Practice LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -29,11 +29,23 @@ target_include_directories(glad PUBLIC
 )
 
 # Your program
-add_executable(Alexandria-2
+add_executable(OpenGL-Practice
     src/main.cpp
 )
 
-target_link_libraries(Alexandria-2
+configure_file(
+    "${CMAKE_SOURCE_DIR}/src/shader.vs"
+    "${CMAKE_BINARY_DIR}/shader.vs"
+    COPYONLY
+)
+
+configure_file(
+    "${CMAKE_SOURCE_DIR}/src/shader.fs"
+    "${CMAKE_BINARY_DIR}/shader.fs"
+    COPYONLY
+)
+
+target_link_libraries(OpenGL-Practice
     PRIVATE
     glfw
     glad
